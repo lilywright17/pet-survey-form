@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="hre">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<h1 id="title">Pet Cat Survey Form</h1>
+<p id="description">Tell us about your pet cat</p>
+<form id="survey-form">
+
+  <fieldset>
+    <label id="name-label"> Your name <input id="name" type="text" placeholder="Enter your name" required/></label>
+    <label id="email-label"Email> Your email <input id="email" type="email" placeholder="Enter your email" required/> </label>
+</fieldset>
+
+<fieldset>
+    <label id="number-label">How many cats do you have? <input id="number" type="number" min="1" max="100" placeholder="Number of cats"/>
+    <label for="dropdown">What kind of cat do you have?
+      <select id="dropdown">
+        <option> Tabby </option>
+        <option> Ginger </option>
+        <option> Black & white </option>
+        </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <label for="personality">What personality does your cat have?</label>
+<label> Friendly <input type="radio" name="friendly-energetic" value="friendly-energetic" /></label>
+<label> Energetic <input type="radio" name="friendly-energetic" value ="friendly-energetic" /></label>
+</fieldset>
+<fieldset>
+      <label>Is your cat indoor or outdoor?</label>
+      <label>Indoor <input type="radio" value="indoor-outdoor" name="indoor-outdoor"/></label>
+      <label>Outdoor <input type="radio" value="indoor-outdoor" name="indoor-outdoor"/></label>
+      </fieldset>
+
+    <fieldset>
+      <label>Do you have other pets?</label>
+      <label id="dog">Dog<input type="checkbox" name="dog" value="dog"/></label>
+      <label id="bird">Bird<input type="checkbox" name="bird" value="bird"/></label>
+
+      <label id="comment">Any other comments? </label>
+
+      <textarea id="comment" name="comment" rows="4" cols="50"/></textarea>
+
+      <fieldset>
+      <button id="submit"><input type="submit" id="submit"/></button>
+      </fieldset>
+  </form>
+</html>
